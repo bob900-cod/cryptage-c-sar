@@ -16,10 +16,10 @@ int main() {
     printf("Entrez le nom du fichier a lire : ");
     scanf("%s", filename_read);
 
-    printf("Entrez le nom du fichier a ecrire : ");
+    printf("Entrez le nom du fichier a %ccrire : ", 130);
     scanf("%s", filename_write);
 
-    printf("Entrez le decalage voulu : ");
+    printf("Entrez le d%ccalage voulu : ", 130);
     scanf("%d", &shift);
 
     // Ouvrir le premier fichier en mode lecture
@@ -51,7 +51,7 @@ int main() {
     fclose(file_read);
     fclose(file_write);
 
-    printf("Reussi.\n");
+    printf("R%cussi.\n", 130);
 
     return 0;
 }
